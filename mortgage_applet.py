@@ -1,0 +1,10 @@
+from Mortgage_Calculator import Calculator
+principal = float(input("How much is the principal value of your home?" ))
+down_payment = float(input("How much are you going to put down on your house?" ))
+interest = float(input("What interest rate will you be paying on your loan?" ))
+insurance = float(input("How much is your insurance monthly?" ))
+hoa = float(input("If your home is under an HOA enter the monthly fee. If there is no HOA then enter 0." ))
+taxes = float(input("Enter your property tax rate." ))
+mortgage_length = float(input("Enter the length of your mortgage. This will typically be 15 or 30 years." ))
+mortgage = Calculator(principal, down_payment, interest, insurance, hoa, taxes, mortgage_length)
+print(mortgage.calculate())
